@@ -1,0 +1,50 @@
+File format
+
+All files are in CSV format. Note that file names and paths can be changed
+in the code. 
+
+== Input files
+
+= coal_plants.csv
+
+Coal-fired power plant fleet. Based on WEPP (World Electric Power Plants) database from S&P Global.
+
+Columns:
+Country – country
+FUEL – main fuel of the plant
+FUELTYPE – fuel type (for coal-fired plants: ANTH - anthracite, BIT - bituminous coal,
+	SUB - subbituminous coal, LIG – lignite, OTHER – other coal types)
+MW – installed capacity (MW)
+STATUS – plant status (relevant statuses: OPR – operating, RET – retired, CON - in construction)
+STYPE – power plant technology (SUBCR – subcritical, SUPERC – supercritical, 
+	ULTRSC = ultra-supercritical, UNKNOWN – unknown)
+Year – operation start year (actual or planned for plants in construction)
+RETIRE – retirement year (for retired plants)
+
+= coal_generation.csv
+
+Electricity generation from coal by year/country. Used for calculating average national load factors. 
+
+Country – country
+Year - year
+Value – generation from coal (GWh)
+
+
+= po_schedule.csv
+
+Phase-out dates (there may be several dates for country; they should be represented by 
+	different rows, and the column Code should be used to distinguish between them)
+
+Country – country
+Code – code of the case (country/phase-out year combination can be used when a country has several
+	phase-out dates; can be the same as Country otherwise)
+Year – phase-out year 
+
+
+== Output file
+
+= avoided_emissions.csv
+
+Code – code of the case (usually country or country/phase-out year combination)
+MWYear – avoided generation from coal (MW*Years)
+Carbon – avoided emissions (million tonnes of CO2)
