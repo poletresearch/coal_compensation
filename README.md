@@ -31,7 +31,8 @@ truncnorm 1.0-9
 ## Running instructions
 
 Place the files into a folder (no special installation is required). Edit paths to source
-data files in avoided_emissions.R and run the file.
+data files in avoided_emissions.R and run the file. The output will be saved in the file
+avoided_emissions.csv (see file_format.txt for the format).
  
 When running the file with the provided demo data, working directory should be set to one containing
 the respective data files.
