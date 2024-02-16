@@ -24,6 +24,7 @@ file_format.txt – description of input and output file formats
 A recent version of R (on any operating system for which R is available) with packages dplyr and truncnorm
 
 Tested with:
+macOS 14.3.0
 R 4.3.2
 dplyr 1.1.3
 truncnorm 1.0-9
