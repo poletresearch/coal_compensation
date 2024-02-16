@@ -43,8 +43,8 @@ constr <- NA
 # first retirement year (uniform distribution )
 # any other value - immediate retirement in the first year
 
-overdue <- 'truncnorm'
-#overdue <- 'five'
+overdue <- 'five'
+#overdue <- 'truncnorm'
 #overdue <- 'other'
 
 ## Phaseout data
