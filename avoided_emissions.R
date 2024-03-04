@@ -163,7 +163,7 @@ if (overdue == 'truncnorm') {
   p2 <- p2a %>% mutate(Ret = etruncnorm(a = first_year, mean = Exp.Ret, sd = SDLife), 
                     RETIRE = round(Ret))
 } else if (overdue == 'five') {
-  p2 <- p2a %>% mutate(Ret = round(Exp.Ret), Rand = sample(0:4, nrow(p2), replace = T), 
+  p2 <- p2a %>% mutate(Ret = round(Exp.Ret), Rand = sample(0:4, nrow(p2a), replace = T), 
                        RETIRE = ifelse(Ret < first_year, first_year + Rand, Ret)) %>%
     select(- Rand)
 } else {
