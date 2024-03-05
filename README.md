@@ -66,8 +66,8 @@ using calculated generation and installed capacity. Average national load factor
 a mean across all years in the time range for a given country.
 
 4. Calculation of baseline retirement dates. For each operating plant, a baseline retirement date is 
-calculated by adding the average national lifetime to the starting year (for plants with < 4 retirement 
-events in the specified range, default lifetime is used). For ‘overdue’ plants (already past the 
+calculated by adding the average national lifetime to the starting year (for countries with < 4 retirement 
+ceses in the specified range (see item 2 above), default lifetime is used). For ‘overdue’ plants (already past the 
 average national lifetime in the starting year of the calculation), three possible strategies can be 
 used (which one is used is determined by the variable ‘overdue’)
 
